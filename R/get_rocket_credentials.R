@@ -45,7 +45,7 @@ get_rocket_credentials <-
 
     if(credentials_return$status != 'success') {
 
-      stop('Não foi possível autenticar no rocket.chat')
+      stop('It was not possible to authenticate with Rocket.chat server')
 
     }
 
