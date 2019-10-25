@@ -38,7 +38,7 @@ send_rocket_attachment <-
     if(grepl('@', receiver)) {
 
       rec_id <-
-        get_rocket_users_list(
+        get_rocket_users(
           url = url,
           user_id = user_id,
           auth_token = auth_token
