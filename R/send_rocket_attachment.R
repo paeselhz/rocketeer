@@ -83,7 +83,7 @@ send_rocket_attachment <-
           )
         ) %>%
         dplyr::filter(
-          stringr::str_detect(name, stringr::str_remove(destination, '#'))
+          stringr::str_detect(name, stringr::str_remove(receiver, '#'))
         ) %>%
         .$id
     }
